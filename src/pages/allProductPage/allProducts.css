@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.breadcrumb {
+  @apply flex list-none p-0 m-10;
+}
+
+.all-products-container {
+  @apply flex justify-start items-start;
+}
+
+.all-products-display {
+  @apply flex  justify-center items-center m-10 flex-col;
+}
+
+.all-products-display .header {
+  @apply text-breadCrumbsTextColor text-[40px] font-inter font-bold;
+}
+
+.all-products-grid {
+  @apply grid grid-cols-3 gap-4 p-4;
+}

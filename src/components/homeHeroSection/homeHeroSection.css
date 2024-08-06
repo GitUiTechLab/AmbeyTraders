@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home-hero-section {
+  @apply bg-primaryNavbarBgColor flex justify-between items-start font-montserrat mt-6 px-20 py-10;
+}
+
+.hero-content-btn {
+  @apply text-white bg-buttonBgColor px-4 py-6 w-[124px] h-[52px] flex justify-center items-center rounded-md mt-6;
+}

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.filter-category-card {
+  @apply bg-white border-[1px] rounded-xl flex flex-col justify-start items-start w-[293px]  px-2 py-2;
+}
+
+.filter-category-card-item {
+  @apply flex flex-row justify-between items-start p-3 w-full;
+}
+
+.filter-category-card-item input[type="radio"] {
+  @apply accent-buttonBgColor w-[20px] h-[20px];
+}

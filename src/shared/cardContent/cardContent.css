@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-content {
+  @apply gap-[34px];
+}
+
+.card-content .header {
+  @apply text-[40px] text-headerColor font-bold;
+}
+
+.card-content .content {
+  @apply flex justify-between items-center gap-4 flex-wrap;
+}
+
+.card-content .content-item {
+  @apply px-6 py-4 border-[1px] border-borderColor shadow-card-shadow flex justify-center items-center flex-col w-[298px] h-[376px];
+}
+
+.card-content .content-item-header {
+  @apply text-[14px] font-normal text-headerColor;
+}
+
+.card-content .content-item-subheader {
+  @apply text-[12px] mt-3 text-subheaderColor font-normal;
+}
+
+.card-content .content-item-border {
+  @apply border-r-[1px] border-borderRightColor w-[24px] p-2;
+}
+
+.card-content .content-btn-container {
+  @apply bg-buttonBgColor text-white px-3 py-6 rounded-md w-[207px] h-[52px] flex items-center justify-center;
+}

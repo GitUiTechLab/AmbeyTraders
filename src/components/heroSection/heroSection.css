@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.hero-section {
+  @apply bg-cover bg-center bg-hero-image p-10 flex justify-start items-center relative z-0;
+}
+
+.hero-text {
+  @apply text-[48px] font-inter font-[600px] flex flex-col justify-start items-start;
+}
+
+.hero-sub-text {
+  @apply flex flex-row justify-start items-center;
+}
+
+.hero-button {
+  @apply bg-buttonBgColor flex justify-center items-center text-white text-[24px] rounded-xl px-4 py-3;
+}
+
+.hero-image2-container {
+  @apply absolute top-[65px] left-[1211px];
+}

@@ -1,0 +1,13 @@
+export {default as Navbar} from "./navbar/Navbar";
+export {default as UpperNavbar} from "./upperNavbar/UpperNavbar";
+export { default as HeroSection} from "./heroSection/HeroSection";
+export { default as AllProducts} from "./allProducts/AllProducts";
+export { default as NewArrivals} from "./newArrivals/NewArrivals";
+export { default as HomeHeroSection} from "./homeHeroSection/HomeHeroSection";
+export { default as HomeDailyDeals} from "./homeDailyDeals/HomeDailyDeals";
+export { default as HomeWhatsappHeroSection} from "./homeWhatsappHeroSection/HomeWhatsappHeroSection";
+export { default as MoreToExplore} from "./moreToExplore/MoreToExplore";
+export { default as RecentlyViewed } from "./recentlyViewed/RecentlyViewed";
+export { default as Testimonials } from "./testimonials/Testimonials";
+export { default as Footer} from "./footer/Footer";
+export { default as BestSeller} from "./bestSellers/BestSellers";

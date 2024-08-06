@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.upper-navbar-container {
+  @apply flex justify-between items-center bg-primaryNavbarBgColor pl-2 pr-4 py-4 font-inter;
+}
+
+.upper-navbar-container .search-bar {
+  @apply bg-white text-black font-inter px-4 py-6 flex justify-start items-center border-[1px] border-solid border-black rounded-[4px] h-[40px] w-[509px];
+}
+
+.upper-navbar-container .search-bar input:focus {
+  @apply outline-none;
+}
+
+.upper-navbar-container .select-language {
+  @apply bg-buttonBgColor text-white rounded-[8px] px-[10px] py-4 flex justify-between items-center h-[48px];
+}

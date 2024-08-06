@@ -1,0 +1,508 @@
+import { ProfileIcon, YourOrderIcon, AddressIcon, ContactUsIcon, LogoutIcon, ShampooImage, BournvitaImage, ShampooImage1, DaburRedImage, EnoImage, FaceWashImage, DailyDealsProductImage, FacewashProductImage, NiveaProductImage, HimalayaProductImage, PhoneIcon, MailIcon, AddressIcon1, BestSellerPeroductImage, AyurHerbalShampooImage, AyurCleansingProductImage, AllOutProductImage, CloseUpProductImage, BounvitaProductImage, ClinicPlusProductImage, DenvarProductImage } from "../assets"
+import { upperNavbarDropdownMenu, upperNavbarDropdownMenuType } from "../types"
+
+
+export const upperNavbarDropdownContent: upperNavbarDropdownMenu = [
+    {
+        id: 1,
+        label: "Your Profile",
+        path: "/profile",
+        icon: ProfileIcon
+    },
+    {
+        id: 2,
+        label: "Your Orders",
+        path: "/orders",
+        icon: YourOrderIcon
+    },
+    {
+        id: 3,
+        label: "Manage Address",
+        path: "/manage-address",
+        icon: AddressIcon
+    },
+    {
+        id: 4,
+        label: "Contact Us",
+        path: "/contact-us",
+        icon: ContactUsIcon
+
+    },
+    {
+        id: 5,
+        label: "Logout",
+        icon: LogoutIcon
+    }
+]
+
+export const navbarContent = [
+    {
+        id: 1,
+        label: "Home",
+        path: "/"
+    },
+    {
+        id: 2,
+        label: "Bulk Details",
+        path: "/bulk-details"
+    },
+    {
+        id: 3,
+        label: "Products Category",
+        path: "/products-category",
+        nestedLabelHeader: "Products A To Z",
+        nestedLabel: [
+            {
+                label: "Face Care",
+                path: "/face-care"
+            },
+            {
+                label: "Body Care",
+                path: "/body-care"
+            },
+            {
+                label: "Baby Care",
+                path: "/baby-care"
+            },
+            {
+                label: "Food Items",
+                path: "/food-items"
+            },
+            {
+                label: "Grocery Items",
+                path: "/grocery-items"
+            }
+        ]
+    },
+    {
+        id: 4,
+        label: "New Arrivals",
+        path: "/new-arrivals"
+    },
+    {
+        id: 5,
+        label: "Contact Us",
+        path: "/contact-us"
+    }
+]
+
+export const HowToShopSteps = [
+    {
+        id: 1,
+        title: "Search Products Easily",
+        description: "Use the search bar to find items.",
+    },
+    {
+        id: 2,
+        title: "Browse Categories",
+        description: "Explore sections for more options.",
+    },
+    {
+        id: 3,
+        title: "Use Filters & Sorting",
+        description: "Narrow choices by price, brand, etc.",
+    },
+    {
+        id: 4,
+        title: "Add to Cart",
+        description: "Select items and add to your cart.",
+    },
+    {
+        id: 5,
+        title: "Proceed to Checkout",
+        description: "Review cart, apply promo codes.",
+    },
+    {
+        id: 6,
+        title: "Enter Details & Pay",
+        description: "Provide shipping info, make payment.",
+    },
+];
+
+export const allProductsContent = [
+    {
+        image: ShampooImage,
+        header: "Ayur Shampoo"
+    },
+    {
+        image: BournvitaImage,
+        header: "Bournvita"
+    },
+    {
+        image: ShampooImage1,
+        header: "Clinic Plus"
+    },
+    {
+        image: DaburRedImage,
+        header: "Dabur Lal Tail"
+    },
+    {
+        image: EnoImage,
+        header: "Eno Fruit Salt"
+    }
+]
+
+const newArrivalContent = {
+    image: FaceWashImage,
+    header: "Mamaearth Rice water & Niacinamde for Glass Skin Face...",
+    subheader: "100ml",
+    rating: "4.3",
+    price: "₹1350",
+    imageWidth: 78,
+    imageHeight: 213
+}
+
+const dailyDealsSingleContent = {
+    image: DailyDealsProductImage,
+    header: "Mamaearth Rice water & Niacinamde for Glass Skin Face...",
+    subheader: "100ml",
+    rating: "4.3",
+    price: "₹1350",
+    imageWidth: 191,
+    imageHeight: 218
+}
+
+const moreToExploreSingleContent = {
+    image: FacewashProductImage,
+    header: "Mamaearth Rice water & Niacinamde for Glass Skin Face...",
+    subheader: "100ml",
+    rating: "4.3",
+    price: "₹1350",
+    imageWidth: 112,
+    imageHeight: 218
+}
+
+const bestSellersSingleProductContent = {
+    image: BestSellerPeroductImage,
+    header: "Himalaya Purifying Neem Face Wash",
+    subheader: "250ml",
+    rating: "5.0",
+    price: "390",
+    tag: "Best Seller",
+    imageWidth: 78,
+    imageHeight: 213
+}
+
+export const NewArrivalContent = [
+    {
+        headerName: "New Arrival",
+        content: Array(4).fill(null).map(() => ({ ...newArrivalContent })),
+        buttonHeader: "Explore New Arrivals",
+        path: "/new-arrivals"
+    }
+]
+
+export const BestSellerContent = [
+    {
+        headerName: "Best Seller",
+        content: Array(4).fill(null).map(() => ({ ...bestSellersSingleProductContent })),
+        buttonHeader: "Explore Best Sellers",
+        path: "/best-sellers",
+
+    }
+]
+
+export const DailyDealsContent = [
+    {
+        headerName: "Daily Deals",
+        content: Array(4).fill(null).map(() => ({ ...dailyDealsSingleContent })),
+        buttonHeader: "Explore Best Deals",
+        path: "/daily-deals"
+    }
+]
+
+export const MoreToExploreContent = [
+    {
+        headerName: "More to Explore",
+        content: Array(4).fill(null).map(() => ({
+            ...moreToExploreSingleContent
+        })),
+        buttonHeader: "Explore More",
+        path: "/more-to-explore"
+    }
+]
+
+export const RecenetlyViewedContent = [
+    {
+        headerName: "Recently Viewed",
+        content: [
+            {
+                image: NiveaProductImage,
+                header: "Mamaearth Rice water & Niacinamde for Glass Skin Face...",
+                subheader: "100ml",
+                rating: "4.3",
+                price: "₹1350",
+                imageWidth: 78,
+                imageHeight: 213
+
+            },
+            {
+                image: HimalayaProductImage,
+                header: "Himalaya Herbals Neem Face Wash for Acne Prone Skin...",
+                subheader: "100ml",
+                rating: "4.5",
+                price: "₹250",
+                imageWidth: 78,
+                imageHeight: 213
+            },
+            {
+                image: FacewashProductImage,
+                header: "Mamaearth Rice water & Niacinamde for Glass Skin Face...",
+                subheader: "100ml",
+                rating: "4.3",
+                price: "₹1350",
+                imageWidth: 112,
+                imageHeight: 218
+            },
+            {
+                image: DailyDealsProductImage,
+                header: "Mamaearth Rice water & Niacinamde for Glass Skin Face...",
+                subheader: "100ml",
+                rating: "4.3",
+                price: "₹1350",
+                imageWidth: 191,
+                imageHeight: 218
+            }
+        ]
+    }
+]
+
+export const testimonialsContent = [
+    {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet,",
+        name: "Maniya Smith",
+        location: "Hanumangarh, Rajasthan"
+    },
+    {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure commodo consequat. Duis aute irure",
+        name: "Taniya Smith",
+        location: "Jaipur, Rajasthan"
+    },
+    {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+        name: "Saanvi Smith",
+        location: "Kota, Rajasthan"
+    }
+];
+
+export const footerLeftContent = [
+    {
+        icon: PhoneIcon,
+        text: "203-638-8150"
+    },
+    {
+        icon: MailIcon,
+        text: "info@cgn.com"
+    },
+    {
+        icon: AddressIcon1,
+        text: "7400-E Pinnacle Peak Road, Suite 204 Scottsdale, AZ 85255"
+
+    }
+]
+
+export const footerContentRightOne = [
+    {
+        header: "Lorem ipsum",
+        subheader: [
+            {
+                name: "Lorem ipsum",
+                link: "/lorem-ipsum"
+            },
+            {
+                name: "Aigile Messaging",
+                link: "/aigile-messaging"
+            },
+            {
+                name: "Choose Message Optimisation",
+                link: "/"
+            },
+            {
+                name: "Choose Vis Aid",
+                link: "/"
+            },
+            {
+                name: "Choose Message Recall",
+                link: "/"
+            },
+            {
+                name: "KRITSL Scoreboard",
+                link: "/"
+            },
+            {
+                name: "KRISTL Predictive Message Testing",
+                link: "/"
+            }
+        ]
+    },
+]
+
+export const footerContentRightMiddleOne = [
+    {
+        header: "Lorem ipsum",
+        subheader: [
+            {
+                name: "Content Creation",
+                path: "/content-creation"
+            },
+            {
+                name: "Market Research",
+                path: "/market-research"
+            },
+            {
+                name: "Machine Learning",
+                path: "/machine-learning"
+            }
+        ]
+    }
+]
+
+export const footerContentMiddleTwo = [
+    {
+        header: "Lorem ipsum",
+        subheader: [
+            {
+                name: "Phase 1-Phase 2",
+                path: "/"
+            },
+            {
+                name: "Phase 3- Launch",
+                path: "/"
+            },
+            {
+                name: "Post Launch- LOE",
+                path: "/"
+            }
+        ]
+    }
+]
+
+export const footerContentRightTwo = [
+    {
+        header: "Lorem ipsum",
+        subheader: [
+            {
+                name: "Home",
+                path: "/"
+            },
+            {
+                name: "Heuristic Science Institute",
+                path: "/"
+            },
+            {
+                name: "Knowledge Center",
+                path: "/"
+            },
+            {
+                name: "News",
+                path: "/"
+            },
+            {
+                name: "About",
+                path: "/"
+            },
+            {
+                name: "Contact",
+                path: "/"
+            },
+            {
+                name: "People",
+                path: "/"
+            },
+            {
+                name: "Pay It Forward",
+                path: "/"
+            }
+        ]
+    }
+
+]
+
+export const AllProductsContent = [
+    {
+        image: AyurHerbalShampooImage,
+        header: "Ayur Herbal Shampoo Amla & Shikakai With Reetha ",
+        subheader: "500ml",
+        rating: "5.0",
+        price: "₹210",
+        mainCategory: "all",
+        category: "body-care",
+        subCategory: "shampoo",
+        imageWidth: 78,
+        imageHeight: 213
+    },
+    {
+        image: AyurCleansingProductImage,
+        header: "Ayur Herbal Deep Pore Cleansing Milk",
+        subheader: "100ml",
+        rating: "5.0",
+        price: "₹80",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "scrubs",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Best Seller"
+    },
+    {
+        image: AllOutProductImage,
+        header: "All Out Ultra Power+ Slider Mosquito Repellent Machine",
+        rating: "5.0",
+        price: "₹100",
+        mainCategory: "all",
+        category: "grocery-items",
+        subCategory: "mosquito-repellent",
+        imageWidth: 141,
+        imageHeight: 224,
+        tag: "New Launch"
+    },
+    {
+        image: BounvitaProductImage,
+        header: "BOURNVITA Cadbury Chocolate",
+        subheader: "500ml",
+        rating: "5.0",
+        price: "₹255",
+        mainCategory: "all",
+        category: "grocery-items",
+        subCategory: "energy-drinks",
+        imageWidth: 141,
+        imageHeight: 224
+    },
+    {
+        image: CloseUpProductImage,
+        header: "Closeup Everfresh+ Red Hot Gel Toothpaste",
+        subheader: "150ml",
+        rating: "5.0",
+        price: "₹130",
+        mainCategory: "all",
+        category: "grocery-item",
+        subCategory: "toothpaste",
+        imageWidth: 141,
+        imageHeight: 224
+    },
+    {
+        image: ClinicPlusProductImage,
+        header: "Clinic Plus+ Strong & Long Health Shampoo ",
+        subheader: "355ml",
+        rating: "5.0",
+        price: "₹285",
+        mainCategory: "all",
+        category: "body-care",
+        subCategory: "shampoo",
+        imageWidth: 78,
+        imageHeight: 213
+    },
+    {
+        image: DenvarProductImage,
+        header: "Denver Deodorant Body Spray Caliber and Imperial for Men, ",
+        subheader: "165ml",
+        rating: "5.0",
+        price: "₹230",
+        mainCategory: "all",
+        category: "body-care",
+        subCategory: "deodorants",
+        imageWidth: 93,
+        imageHeight: 213
+    }
+
+]

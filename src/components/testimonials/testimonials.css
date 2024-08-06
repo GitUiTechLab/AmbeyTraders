@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.testimonials .header {
+  @apply text-[40px] text-homeHeroSectionFontColor font-inter font-[700px];
+}
+
+.testimonials .testimonial-large {
+  @apply w-[350px] h-[374px] rounded-lg p-6 bg-white flex  flex-col justify-start items-start relative;
+}
+
+.testimonials .testimonial_small {
+  @apply w-[255px] h-[288px] rounded-lg p-6 bg-white flex  flex-col justify-start items-start relative;
+}

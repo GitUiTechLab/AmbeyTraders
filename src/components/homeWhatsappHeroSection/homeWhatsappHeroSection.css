@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.whatsapp-hero-section {
+  @apply bg-homeHeroSectionBgColor2 px-6 py-10 flex flex-col justify-center items-center mt-10;
+}
+
+.whatsapp-hero-section .content-btn {
+  @apply text-white bg-buttonBgColor rounded-md flex justify-center  px-4 py-6 items-center w-[207px] h-[52px];
+}
