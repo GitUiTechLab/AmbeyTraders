@@ -1,4 +1,4 @@
-import { ProfileIcon, YourOrderIcon, AddressIcon, ContactUsIcon, LogoutIcon, ShampooImage, BournvitaImage, ShampooImage1, DaburRedImage, EnoImage, FaceWashImage, DailyDealsProductImage, FacewashProductImage, NiveaProductImage, HimalayaProductImage, PhoneIcon, MailIcon, AddressIcon1, BestSellerPeroductImage, AyurHerbalShampooImage, AyurCleansingProductImage, AllOutProductImage, CloseUpProductImage, BounvitaProductImage, ClinicPlusProductImage, DenvarProductImage } from "../assets"
+import { ProfileIcon, YourOrderIcon, AddressIcon, ContactUsIcon, LogoutIcon, ShampooImage, BournvitaImage, ShampooImage1, DaburRedImage, EnoImage, FaceWashImage, DailyDealsProductImage, FacewashProductImage, NiveaProductImage, HimalayaProductImage, PhoneIcon, MailIcon, AddressIcon1, BestSellerPeroductImage, AyurHerbalShampooImage, AyurCleansingProductImage, AllOutProductImage, CloseUpProductImage, BounvitaProductImage, ClinicPlusProductImage, DenvarProductImage, SilkProductImage, DaburGulabariProductImage, EnoFruitSaltProductImage, FariAndLovelyProductImage, FemProductImage, GarnierMenFaceWash, HimalayaBabyShampoo, HimalayaBabyShampooProductImage, HorlicksProductImage, JhonsonBabyProductImage, FiamaGelBar, GarnierBlackProductImage, DaburLalTelProductImage, EngagePerfumeProductImage, HimalayaBabyLotion, JoyBodyLotion } from "../assets"
 import { upperNavbarDropdownMenu, upperNavbarDropdownMenuType } from "../types"
 
 
@@ -502,6 +502,193 @@ export const AllProductsContent = [
         category: "body-care",
         subCategory: "deodorants",
         imageWidth: 93,
+        imageHeight: 213
+    },
+    {
+        image: SilkProductImage,
+        header: "Dairy Milk Silk Chocolate",
+        subheader: "200g",
+        rating: "5.0",
+        price: "₹60",
+        mainCategory: "all",
+        category: "grocery-items",
+        subCategory: "chocolates",
+        imageWidth: 141,
+        imageHeight: 231
+    },
+    {
+        image: DaburGulabariProductImage,
+        header: "Dabur Gulabari ",
+        subheader: "200ml",
+        rating: "5.0",
+        price: "₹60",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "scrubs",
+        imageWidth: 78,
+        imageHeight: 213
+    },
+    {
+        image: EnoFruitSaltProductImage,
+        header: "Eno Fruit Salt",
+        rating: "5.0",
+        price: "₹20",
+        mainCategory: "all",
+        category: "grocery-items",
+        subCategory: "digestives",
+        imageWidth: 141,
+        imageHeight: 224
+    },
+    {
+        image: FariAndLovelyProductImage,
+        header: "Fair & Lovely Advanced Multi Vitamin Face Cream",
+        subheader: "50g",
+        rating: "5.0",
+        price: "₹125",
+        mainCategory: "all",
+        category: "face-care",
+        subCategroy: "face-wash",
+        imageWidth: 78,
+        imageHeight: 213
+    },
+    {
+        image: FemProductImage,
+        header: "FEM Fairness (Turmeric&Milk) Crème Bleach-24G",
+        subheader: "40ml",
+        rating: "5.0",
+        price: "₹80",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "face-wash",
+        imageWidth: 78,
+        imageHeight: 213
+    },
+    {
+        image: GarnierMenFaceWash,
+        header: "Garnier Men Acno Fight Anti-Pimple Facewash,",
+        subheader: "60ml",
+        rating: "5.0",
+        price: "₹160",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "face-wash",
+        imageWidth: 78,
+        imageHeight: 213
+    },
+    {
+        image: HimalayaBabyShampoo,
+        header: "Himalaya Shampoo For Baby",
+        subheader: "200ml",
+        rating: "5.0",
+        price: "₹210",
+        mainCategory: "all",
+        category: "baby-care",
+        subCategory: "shampoo",
+        imageWidth: 78,
+        imageHeight: 213
+    },
+    {
+        image: HimalayaBabyShampooProductImage,
+        header: "Himalaya Baby Shampoo",
+        subheader: "200ml",
+        rating: "5.0",
+        price: "₹210",
+        mainCategory: "all",
+        category: "baby-care",
+        subCategory: "shampoo",
+        imageWidth: 78,
+        imageHeight: 213
+    },
+    {
+        image: HorlicksProductImage,
+        header: "Horlicks Nutrition Drink Jar|500ml ",
+        rating: "5.0",
+        price: "₹294",
+        mainCategory: "all",
+        category: "food-items",
+        subCategory: "energy-drinks",
+        imageWidth: 141,
+        imageHeight: 224
+    },
+    {
+        image: JhonsonBabyProductImage,
+        header: " Johnson & Johnson Johnson's Baby Powder",
+        subheader: "50ml",
+        price: "₹65",
+        mainCategory: "all",
+        subCategory: "baby-care",
+        category: "baby-care",
+        imageWidth: 78,
+        imageHeight: 213
+    },
+    {
+        image: FiamaGelBar,
+        header: "Fiama Multivariant Gel Bar ",
+        subheader: "5PCS",
+        price: "₹399",
+        mainCategory: "all",
+        category: "body-care",
+        subCategory: "soaps",
+        imageWidth: 141,
+        imageHeight: 224
+    },
+    {
+        image: GarnierBlackProductImage,
+        header: "Black Cream Garnier Hair Color, Pouch",
+        rating: "5.0",
+        price: "₹45",
+        mainCategory: "all",
+        category: "body-care",
+        subCategory: "DYE",
+        imageWidth: 136,
+        imageheight: 195
+    },
+    {
+        image: DaburLalTelProductImage,
+        header: "Dabur Lal Tail",
+        subheader: "50ml",
+        rating: "5.0",
+        price: "₹45",
+        mainCategory: "all",
+        category: "baby-care",
+        subCategory: "baby-care",
+        imageWidth: 78,
+        imageHeight: 213
+    },
+    {
+        image: EngagePerfumeProductImage,
+        header: "Engage ON Cool Marine Pocket Perfume For Men,",
+        rating: "5.0",
+        price: "₹60",
+        mainCategory: "all",
+        category: "body-care",
+        subCategory: "deodorants",
+        imageWidth: 78,
+        imageHeight: 213,
+        discount: 35
+    },
+    {
+        image: HimalayaBabyLotion,
+        header: "Himalaya Lotion For Baby",
+        subheader: "200ml",
+        rating: "5.0",
+        price: "₹60",
+        mainCategory: "all",
+        category: "baby-care",
+        subcategory: "baby-care",
+        imageWidth: 78,
+        imageHeight: 213
+    },
+    {
+        image: JoyBodyLotion,
+        header: "Joy Honey & Almonds Advanced Nourishing Body Lotion",
+        rating: "5.0",
+        subheader: "40ml",
+        price: "₹40",
+        mainCategory: "all",
+        category: "body-care",
+        subCategory: "face-creams",
+        imageWidth: 78,
         imageHeight: 213
     }
 

@@ -6,7 +6,7 @@ export type upperNavbarDropdownMenuType = {
 }
 
 type category = {
-    value: string,
+    value: string | number,
     name: string
 }
 
@@ -36,6 +36,7 @@ type ProductCardProps = {
     imageWidth: number;
     imageHeight: number;
     tag?: string;
+    discount?: number
 }
 
 export type ProductCardContainerPeops = {

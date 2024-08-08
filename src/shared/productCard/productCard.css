@@ -3,5 +3,5 @@
 @tailwind components;
 
 .each-card {
-  @apply rounded-t-xl rounded-l-xl bg-white gap-6 px-5 flex items-center justify-center flex-col flex-1 flex-wrap;
+  @apply rounded-t-xl rounded-l-xl bg-white gap-6 px-5 flex items-center justify-center flex-col border-[1px] h-[408px];
 }

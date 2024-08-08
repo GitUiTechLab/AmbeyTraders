@@ -18,12 +18,12 @@ const categories = [
 ];
 
 const discounts = [
-    { name: '10% and above', value: '10' },
-    { name: '20% and above', value: '20' },
-    { name: '30% and above', value: '30' },
-    { name: '40% and above', value: '40' },
-    { name: '50% and above', value: '50' },
-    { name: '60% and above', value: '60' },
+    { name: '10% and above', value: "10" },
+    { name: '20% and above', value: "20" },
+    { name: '30% and above', value: "30" },
+    { name: '40% and above', value: "40" },
+    { name: '50% and above', value: "50" },
+    { name: '60% and above', value: "60" },
 ];
 
 const products = [
@@ -53,14 +53,20 @@ const AllProducts = () => {
     const location = useLocation();
     const currentPath = location.pathname.split('/').filter(x => x);
     const [filterByCategory, setFilterByCategory] = useState(null);
-    const [filterByDiscount, setFilterByDiscount] = useState(null);
+    const [filterByDiscount, setFilterByDiscount] = useState<string | null>(null);
     const [filteredByProduct, setFilteredByProduct] = useState(null);
     const [filteredByCategoryProducts, setFilterByCategoryProducts] = useState<any>(AllProductsContent);
+    const [filteredByDiscountProducts, setFilteredByDiscountProducts] = useState<any>(AllProductsContent);
 
 
     const handleFilteredByCategory = (event: any) => {
         setFilterByCategory(event.target.value);
     }
+
+    const handleFilteredByDiscount = (event: any) => {
+        setFilterByDiscount(event.target.value);
+    }
+
 
     useEffect(() => {
         if (filterByCategory !== null) {
@@ -77,9 +83,16 @@ const AllProducts = () => {
 
     }, [filterByCategory])
 
-    console.log(filterByCategory);
+    useEffect(() => {
+        if (filterByDiscount !== null) {
+            const filteredProducts = AllProductsContent.filter(product => (product.discount ?? 0) >= Number(filterByDiscount));
+            setFilterByCategoryProducts(filteredProducts);
+        }
+    }, [filterByDiscount])
 
-    console.log(currentPath);
+    console.log(filterByDiscount);
+
+    console.log(filterByCategory);
     return (
         <div className='all-products-page'>
             <div className='all-product-hero-container'>
@@ -108,7 +121,7 @@ const AllProducts = () => {
             <div className='all-products-container'>
                 <div className='all-products-filter'>
                     <FilterByCategory headerName={"Filter by Category"} categories={categories} handleChange={handleFilteredByCategory} selectedCategory={filterByCategory} />
-                    <FilterByCategory headerName='Discount Range' categories={discounts} />
+                    <FilterByCategory headerName='Discount Range' categories={discounts} handleChange={handleFilteredByDiscount} selectedCategory={filterByDiscount} />
                     <FilterByCategory headerName='Filter by Product' categories={products} />
                 </div>
                 <div className='all-products-display'>

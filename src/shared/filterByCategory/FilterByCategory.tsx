@@ -4,7 +4,9 @@ import RightArrowIcon from "../../assets/icons/right_arrow_icon.png";
 import "./filterByCategory.css";
 import { FilterByCategoryProps } from "../../types";
 
+
 const FilterByCategory: React.FC<FilterByCategoryProps> = ({ headerName, categories, handleChange, selectedCategory }) => {
+    console.log(selectedCategory);
 
     return (
         <>
@@ -19,7 +21,7 @@ const FilterByCategory: React.FC<FilterByCategoryProps> = ({ headerName, categor
                                 <div className="flex flex-row justify-between items-center">
                                     <input
                                         type="radio"
-                                        name="product"
+                                        name={category.name}
                                         value={category.value}
                                         checked={selectedCategory === category.value}
                                         onChange={handleChange}
