@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.new-arrivals-page {
+  @apply flex justify-between items-start;
+}
+
+.new-arrivals-products-container {
+  @apply flex  justify-center items-center m-10 flex-col;
+}
+
+.new-arrivals-products-container .header {
+  @apply text-breadCrumbsTextColor text-[40px] font-bold text-center;
+}
+
+.new-arrivals-products-grid {
+  @apply grid grid-cols-3 gap-4 p-4;
+}

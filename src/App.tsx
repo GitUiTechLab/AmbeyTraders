@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './pages/home/Home';
 import { Route, Router, Routes } from 'react-router-dom';
-import { AllProducts, NewArrivals } from './pages';
+import { AllProducts, DailyDealsPage, NewArrivals } from './pages';
 import { Footer, Navbar, UpperNavbar } from './components';
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
         <Route path={"/"} element={<Home />} />
         <Route path="/new-arrivals" element={<NewArrivals />} />
         <Route path="/all-products" element={<AllProducts />} />
+        <Route path="/daily-deals" element={<DailyDealsPage />} />
       </Routes>
       <Footer />
     </div>

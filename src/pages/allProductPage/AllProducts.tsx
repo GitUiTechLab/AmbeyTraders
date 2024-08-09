@@ -55,7 +55,7 @@ const AllProducts = () => {
     const [filterByCategory, setFilterByCategory] = useState(null);
     const [filterByDiscount, setFilterByDiscount] = useState<string | null>(null);
     const [filteredByProduct, setFilteredByProduct] = useState(null);
-    const [filteredByCategoryProducts, setFilterByCategoryProducts] = useState<any>(AllProductsContent);
+    const [filteredProducts, setFilteredProducts] = useState<any>(AllProductsContent);
     const [filteredByDiscountProducts, setFilteredByDiscountProducts] = useState<any>(AllProductsContent);
 
 
@@ -67,18 +67,23 @@ const AllProducts = () => {
         setFilterByDiscount(event.target.value);
     }
 
+    const handleFilteredByProduct = (event: any) => {
+        setFilteredByProduct(event.target.value);
+    }
+
+
 
     useEffect(() => {
         if (filterByCategory !== null) {
             const filteredProducts = AllProductsContent.filter(product => product.category === filterByCategory);
-            setFilterByCategoryProducts(filteredProducts)
+            setFilteredProducts(filteredProducts)
         }
 
     }, [filterByCategory])
 
     useEffect(() => {
         if (filterByCategory === "all") {
-            setFilterByCategoryProducts(AllProductsContent);
+            setFilteredProducts(AllProductsContent);
         }
 
     }, [filterByCategory])
@@ -86,9 +91,16 @@ const AllProducts = () => {
     useEffect(() => {
         if (filterByDiscount !== null) {
             const filteredProducts = AllProductsContent.filter(product => (product.discount ?? 0) >= Number(filterByDiscount));
-            setFilterByCategoryProducts(filteredProducts);
+            setFilteredProducts(filteredProducts);
         }
     }, [filterByDiscount])
+
+    useEffect(() => {
+        if (filteredByProduct !== null) {
+            const filteredProducts = AllProductsContent.filter(product => product.subCategory === filteredByProduct);
+            setFilteredProducts(filteredProducts);
+        }
+    }, [filteredByProduct])
 
     console.log(filterByDiscount);
 
@@ -122,12 +134,12 @@ const AllProducts = () => {
                 <div className='all-products-filter'>
                     <FilterByCategory headerName={"Filter by Category"} categories={categories} handleChange={handleFilteredByCategory} selectedCategory={filterByCategory} />
                     <FilterByCategory headerName='Discount Range' categories={discounts} handleChange={handleFilteredByDiscount} selectedCategory={filterByDiscount} />
-                    <FilterByCategory headerName='Filter by Product' categories={products} />
+                    <FilterByCategory headerName='Filter by Product' categories={products} handleChange={handleFilteredByProduct} selectedCategory={filteredByProduct} />
                 </div>
                 <div className='all-products-display'>
                     <div className='header'>A-Z Products</div>
                     <div className='all-products-grid '>
-                        {filteredByCategoryProducts.map((each: any, idx: number) => {
+                        {filteredProducts.map((each: any, idx: number) => {
                             return (
                                 <div key={idx} className='product-grid'>
                                     <ProductCard item={each} />

@@ -675,7 +675,7 @@ export const AllProductsContent = [
         price: "₹60",
         mainCategory: "all",
         category: "baby-care",
-        subcategory: "baby-care",
+        subCategory: "baby-care",
         imageWidth: 78,
         imageHeight: 213
     },
@@ -693,3 +693,86 @@ export const AllProductsContent = [
     }
 
 ]
+
+export const NewArrivalsPageContent = [
+    {
+        image: AyurCleansingProductImage,
+        header: "Ayur Herbal Deep Pore Cleansing Milk",
+        subheader: "100ml",
+        rating: "5.0",
+        price: "₹80",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "scrubs",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Best Seller"
+    },
+    {
+        image: FemProductImage,
+        header: "FEM Fairness (Turmeric&Milk) Crème Bleach-24G",
+        subheader: "40ml",
+        rating: "5.0",
+        price: "₹80",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "face-wash",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Best Seller"
+    },
+    {
+        image: DaburGulabariProductImage,
+        header: "Dabur Gulabari ",
+        subheader: "200ml",
+        rating: "5.0",
+        price: "₹60",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "scrubs",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Best Seller"
+    }
+]
+
+export const categories = [
+    { name: 'Products A -Z', value: 'all' },
+    { name: 'Face Care', value: 'face-care' },
+    { name: 'Body Care', value: 'body-care' },
+    { name: 'Baby Care', value: 'baby-care' },
+    { name: 'Food Items', value: 'food-items' },
+    { name: 'Grocery Items', value: 'grocery-items' },
+];
+
+export const discounts = [
+    { name: '10% and above', value: "10" },
+    { name: '20% and above', value: "20" },
+    { name: '30% and above', value: "30" },
+    { name: '40% and above', value: "40" },
+    { name: '50% and above', value: "50" },
+    { name: '60% and above', value: "60" },
+];
+
+export const products = [
+    { name: 'Baby Lotion', value: 'baby-lotion' },
+    { name: 'Chocolates', value: 'chocolates' },
+    { name: 'Deodorants', value: 'deodorants' },
+    { name: 'Detergents', value: 'detergents' },
+    { name: 'DYE', value: 'dye' },
+    { name: 'Energy Drinks', value: 'energy-drinks' },
+    { name: 'Face Creams', value: 'face-creams' },
+    { name: 'Facewash', value: 'facewash' },
+    { name: 'Hair Oils', value: 'hair-oils' },
+    { name: 'Health & Nutrition', value: 'health-nutrition' },
+    { name: 'Mosquito Repellent', value: 'mosquito-repellent' },
+    { name: 'Powders', value: 'powders' },
+    { name: 'Room Sprays', value: 'room-sprays' },
+    { name: 'Scrubs', value: 'scrubs' },
+    { name: 'Shampoo', value: 'shampoo' },
+    { name: 'Shaving Product', value: 'shaving-product' },
+    { name: 'Soaps', value: 'soaps' },
+    { name: 'Tea & Coffee', value: 'tea-coffee' },
+    { name: 'Toothbrush', value: 'toothbrush' },
+    { name: 'Toothpaste', value: 'toothpaste' },
+];
