@@ -7,7 +7,10 @@ import "./productCard.css";
 const ProductCard: React.FC<ProductCardContainerPeops> = ({ item }) => {
     return (
         <>
-            <div className='each-card '>
+            <div className='each-card relative'>
+                {item.tag ? (<div className='each-card-tag absolute top-0 left-0 bg-buttonBgColor rounded-tl-[12px] rounded-br-[12px]'>
+                    <span className='text-white px-[4px] py-[6px] text-[16px]'>{item.tag}</span>
+                </div>) : null}
                 <div className='each-card-image'>
                     <img src={item.image} alt={item.header} width={item.imageWidth} height={item.imageHeight} />
                 </div>

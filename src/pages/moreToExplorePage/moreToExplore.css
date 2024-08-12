@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.more-to-explore-container {
+  @apply flex justify-between items-start;
+}
+
+.more-to-explore-content-container {
+  @apply flex flex-col justify-center items-center m-10;
+}
+
+.more-to-explore-content-container .header {
+  @apply text-[40px] text-breadCrumbsTextColor text-center font-bold;
+}
+
+.more-to-explore-content-container .products-container-grid {
+  @apply grid grid-cols-3 gap-4 p-4;
+}

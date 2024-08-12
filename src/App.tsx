@@ -3,8 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './pages/home/Home';
 import { Route, Router, Routes } from 'react-router-dom';
-import { AllProducts, DailyDealsPage, NewArrivals } from './pages';
+import { AllProducts, BestSellerPage, DailyDealsPage, NewArrivals } from './pages';
 import { Footer, Navbar, UpperNavbar } from './components';
+import MoreToExplorePage from './pages/moreToExplorePage/MoreToExplorePage';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="/new-arrivals" element={<NewArrivals />} />
         <Route path="/all-products" element={<AllProducts />} />
         <Route path="/daily-deals" element={<DailyDealsPage />} />
+        <Route path="/best-sellers" element={<BestSellerPage />} />
+        <Route path="/more-to-explore" element={<MoreToExplorePage />} />
       </Routes>
       <Footer />
     </div>

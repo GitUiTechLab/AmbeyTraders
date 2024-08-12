@@ -6,3 +6,4 @@ export {default as Profile} from "./profilePage/Profile";
 export { default as NewArrivals} from "./newArrivals/NewArrivals";
 export { default as AllProducts } from "./allProductPage/AllProducts";
 export { default as DailyDealsPage} from "./dailyDealsPage/DailyDealsPage";
+export { default as BestSellerPage} from "./bestSellersPage/BestSellersPage";

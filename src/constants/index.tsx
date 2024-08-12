@@ -1,4 +1,4 @@
-import { ProfileIcon, YourOrderIcon, AddressIcon, ContactUsIcon, LogoutIcon, ShampooImage, BournvitaImage, ShampooImage1, DaburRedImage, EnoImage, FaceWashImage, DailyDealsProductImage, FacewashProductImage, NiveaProductImage, HimalayaProductImage, PhoneIcon, MailIcon, AddressIcon1, BestSellerPeroductImage, AyurHerbalShampooImage, AyurCleansingProductImage, AllOutProductImage, CloseUpProductImage, BounvitaProductImage, ClinicPlusProductImage, DenvarProductImage, SilkProductImage, DaburGulabariProductImage, EnoFruitSaltProductImage, FariAndLovelyProductImage, FemProductImage, GarnierMenFaceWash, HimalayaBabyShampoo, HimalayaBabyShampooProductImage, HorlicksProductImage, JhonsonBabyProductImage, FiamaGelBar, GarnierBlackProductImage, DaburLalTelProductImage, EngagePerfumeProductImage, HimalayaBabyLotion, JoyBodyLotion } from "../assets"
+import { ProfileIcon, YourOrderIcon, AddressIcon, ContactUsIcon, LogoutIcon, ShampooImage, BournvitaImage, ShampooImage1, DaburRedImage, EnoImage, FaceWashImage, DailyDealsProductImage, FacewashProductImage, NiveaProductImage, HimalayaProductImage, PhoneIcon, MailIcon, AddressIcon1, BestSellerPeroductImage, AyurHerbalShampooImage, AyurCleansingProductImage, AllOutProductImage, CloseUpProductImage, BounvitaProductImage, ClinicPlusProductImage, DenvarProductImage, SilkProductImage, DaburGulabariProductImage, EnoFruitSaltProductImage, FariAndLovelyProductImage, FemProductImage, GarnierMenFaceWash, HimalayaBabyShampoo, HimalayaBabyShampooProductImage, HorlicksProductImage, JhonsonBabyProductImage, FiamaGelBar, GarnierBlackProductImage, DaburLalTelProductImage, EngagePerfumeProductImage, HimalayaBabyLotion, JoyBodyLotion, NiharAmlaProductImage } from "../assets"
 import { upperNavbarDropdownMenu, upperNavbarDropdownMenuType } from "../types"
 
 
@@ -694,6 +694,51 @@ export const AllProductsContent = [
 
 ]
 
+export const DailyDealsPageContent = [
+    {
+        image: AyurCleansingProductImage,
+        header: "Ayur Herbal Deep Pore Cleansing Milk",
+        subheader: "100ml",
+        rating: "5.0",
+        price: "₹80",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "scrubs",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Best Seller"
+
+    },
+    {
+        image: FemProductImage,
+        header: "FEM Fairness (Turmeric&Milk) Crème Bleach-24G",
+        subheader: "40ml",
+        rating: "5.0",
+        price: "₹80",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "face-wash",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Best Seller"
+    },
+    {
+        image: DaburGulabariProductImage,
+        header: "Dabur Gulabari ",
+        subheader: "200ml",
+        rating: "5.0",
+        price: "₹60",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "scrubs",
+        imageWidth: 78,
+        imageHeight: 213,
+        discount: 30,
+        tag: "Best Seller"
+    }
+
+]
+
 export const NewArrivalsPageContent = [
     {
         image: AyurCleansingProductImage,
@@ -735,6 +780,101 @@ export const NewArrivalsPageContent = [
         tag: "Best Seller"
     }
 ]
+
+export const BestSellerPageContent = [
+    {
+        image: JoyBodyLotion,
+        header: "Joy Honey & Almonds Advanced Nourishing Body Lotion",
+        rating: "5.0",
+        subheader: "40ml",
+        price: "₹40",
+        mainCategory: "all",
+        category: "body-care",
+        subCategory: "face-creams",
+        imageWidth: 78,
+        imageHeight: 213,
+        discount: 30,
+        tag: "Best Seller"
+    },
+    {
+        image: DenvarProductImage,
+        header: "Denver Deodorant Body Spray Caliber and Imperial for Men, ",
+        subheader: "165ml",
+        rating: "5.0",
+        price: "₹230",
+        mainCategory: "all",
+        category: "body-care",
+        subCategory: "deodorants",
+        imageWidth: 93,
+        imageHeight: 213,
+        tag: "Best Seller"
+    },
+    {
+        image: AyurCleansingProductImage,
+        header: "Ayur Herbal Deep Pore Cleansing Milk",
+        subheader: "100ml",
+        rating: "5.0",
+        price: "₹80",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "scrubs",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Best Seller"
+    },
+    {
+        image: NiharAmlaProductImage,
+        header: "Nihar Shanti Amla Badam Hair Oil",
+        subheader: "28ml",
+        price: "₹10",
+        mainCategory: "all",
+        category: "body-care",
+        subCategory: "hair-oils",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Best Seller"
+    },
+    {
+        image: AyurCleansingProductImage,
+        header: "Ayur Herbal Deep Pore Cleansing Milk",
+        subheader: "100ml",
+        rating: "5.0",
+        price: "₹80",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "scrubs",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Best Seller"
+    },
+    {
+        image: FemProductImage,
+        header: "FEM Fairness (Turmeric&Milk) Crème Bleach-24G",
+        subheader: "40ml",
+        rating: "5.0",
+        price: "₹80",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "face-wash",
+        imageWidth: 156,
+        imageHeight: 213,
+        tag: "Best Seller"
+    },
+    {
+        image: DaburGulabariProductImage,
+        header: "Dabur Gulabari ",
+        subheader: "200ml",
+        rating: "5.0",
+        price: "₹60",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "scrubs",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Best Seller"
+    }
+]
+
 
 export const categories = [
     { name: 'Products A -Z', value: 'all' },

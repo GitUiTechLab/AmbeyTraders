@@ -52,3 +52,4 @@ export { default as EngagePerfumeProductImage} from "./images/engage_perfume.png
 export { default as HimalayaBabyLotion} from "./images/himalaya_lotion.png";
 export { default as JoyBodyLotion} from "./images/joy_skincare.png";
 export { default as BounvitaProductImage} from "./images/bournvita_product_image.png";
+export { default as NiharAmlaProductImage} from "./images/nihar_product_image.png";
