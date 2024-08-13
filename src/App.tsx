@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './pages/home/Home';
 import { Route, Router, Routes } from 'react-router-dom';
-import { AllProducts, BestSellerPage, DailyDealsPage, NewArrivals } from './pages';
+import { AllProducts, BestSellerPage, DailyDealsPage, FaceCarePage, NewArrivals } from './pages';
 import { Footer, Navbar, UpperNavbar } from './components';
 import MoreToExplorePage from './pages/moreToExplorePage/MoreToExplorePage';
 
@@ -19,6 +19,7 @@ function App() {
         <Route path="/daily-deals" element={<DailyDealsPage />} />
         <Route path="/best-sellers" element={<BestSellerPage />} />
         <Route path="/more-to-explore" element={<MoreToExplorePage />} />
+        <Route path="/face-care" element={<FaceCarePage />} />
       </Routes>
       <Footer />
     </div>

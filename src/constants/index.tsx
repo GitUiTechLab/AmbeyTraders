@@ -1,4 +1,4 @@
-import { ProfileIcon, YourOrderIcon, AddressIcon, ContactUsIcon, LogoutIcon, ShampooImage, BournvitaImage, ShampooImage1, DaburRedImage, EnoImage, FaceWashImage, DailyDealsProductImage, FacewashProductImage, NiveaProductImage, HimalayaProductImage, PhoneIcon, MailIcon, AddressIcon1, BestSellerPeroductImage, AyurHerbalShampooImage, AyurCleansingProductImage, AllOutProductImage, CloseUpProductImage, BounvitaProductImage, ClinicPlusProductImage, DenvarProductImage, SilkProductImage, DaburGulabariProductImage, EnoFruitSaltProductImage, FariAndLovelyProductImage, FemProductImage, GarnierMenFaceWash, HimalayaBabyShampoo, HimalayaBabyShampooProductImage, HorlicksProductImage, JhonsonBabyProductImage, FiamaGelBar, GarnierBlackProductImage, DaburLalTelProductImage, EngagePerfumeProductImage, HimalayaBabyLotion, JoyBodyLotion, NiharAmlaProductImage } from "../assets"
+import { ProfileIcon, YourOrderIcon, AddressIcon, ContactUsIcon, LogoutIcon, ShampooImage, BournvitaImage, ShampooImage1, DaburRedImage, EnoImage, FaceWashImage, DailyDealsProductImage, FacewashProductImage, NiveaProductImage, HimalayaProductImage, PhoneIcon, MailIcon, AddressIcon1, BestSellerPeroductImage, AyurHerbalShampooImage, AyurCleansingProductImage, AllOutProductImage, CloseUpProductImage, BounvitaProductImage, ClinicPlusProductImage, DenvarProductImage, SilkProductImage, DaburGulabariProductImage, EnoFruitSaltProductImage, FariAndLovelyProductImage, FemProductImage, GarnierMenFaceWash, HimalayaBabyShampoo, HimalayaBabyShampooProductImage, HorlicksProductImage, JhonsonBabyProductImage, FiamaGelBar, GarnierBlackProductImage, DaburLalTelProductImage, EngagePerfumeProductImage, HimalayaBabyLotion, JoyBodyLotion, NiharAmlaProductImage, PondsFaceWashImage } from "../assets"
 import { upperNavbarDropdownMenu, upperNavbarDropdownMenuType } from "../types"
 
 
@@ -778,6 +778,126 @@ export const NewArrivalsPageContent = [
         imageWidth: 78,
         imageHeight: 213,
         tag: "Best Seller"
+    }
+]
+
+export const FaceCarePageContent = [
+    {
+        image: AyurCleansingProductImage,
+        header: "Ayur Herbal Deep Pore Cleansing Milk",
+        subheader: "100ml",
+        rating: "5.0",
+        price: "₹80",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "scrubs",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Buy Ayur + Ayur Shampoo Free"
+    },
+    {
+        image: FemProductImage,
+        header: "FEM Fairness (Turmeric&Milk) Crème Bleach-24G",
+        subheader: "40ml",
+        rating: "5.0",
+        price: "₹80",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "face-wash",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Best Seller"
+    },
+    {
+        image: DaburGulabariProductImage,
+        header: "Dabur Gulabari ",
+        subheader: "200ml",
+        rating: "5.0",
+        price: "₹60",
+        mainCategory: "all",
+        category: "face-care",
+        subCategory: "scrubs",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Best Seller"
+    }
+]
+
+export const OurProductsContent = [
+    {
+        image: NiveaProductImage,
+        header: "NIVEA Blue Cream + Soft Cream  Deep Moisture Serum ",
+        subheader: "100ml",
+        price: "₹96",
+        mainCategory: "all",
+        subCategory: "Creame",
+        rating: "5.0",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Must Try",
+        tag1: "Save 35%"
+    },
+    {
+        image: FariAndLovelyProductImage,
+        header: "Fair & Lovely Advanced Multi Vitamin Face Cream",
+        subheader: "50ml",
+        rating: "5.0",
+        price: "₹125",
+        mainCategory: "all",
+        subCategory: "Creame",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag1: "Save 35%"
+
+    },
+    {
+        image: GarnierBlackProductImage,
+        header: "Black Cream Garnier Hair Color, Pouch",
+        rating: "5.0",
+        price: "₹45",
+        mainCategory: "all",
+        subCategory: "DYE",
+        imageWidth: 136,
+        imageHeight: 195,
+        tag: "Trending"
+
+    },
+    {
+        image: AyurCleansingProductImage,
+        header: "Ayur Herbal Deep Pore Cleansing Milk",
+        subheader: "100ml",
+        rating: "5.0",
+        price: "₹80",
+        mainCategory: "all",
+        subCategory: "Creame",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Must Try",
+        tag1: "Save 35%"
+    },
+    {
+        image: PondsFaceWashImage,
+        header: "Pond's Pure White Deep Cleansing ",
+        subheader: "12ml",
+        rating: "5.0",
+        price: "₹80",
+        mainCategory: "all",
+        subCategory: "facewash",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag1: "Save 35%"
+    },
+    {
+        image: GarnierMenFaceWash,
+        header: "Garnier Men Acno Fight Anti-Pimple Facewash,",
+        subheader: "60ml",
+        rating: "5.0",
+        price: "₹160",
+        mainCategory: "all",
+        subCategory: "facewash",
+        imageWidth: 78,
+        imageHeight: 213,
+        tag: "Hot Deals"
     }
 ]
 

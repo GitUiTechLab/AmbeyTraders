@@ -8,9 +8,12 @@ const ProductCard: React.FC<ProductCardContainerPeops> = ({ item }) => {
     return (
         <>
             <div className='each-card relative'>
-                {item.tag ? (<div className='each-card-tag absolute top-0 left-0 bg-buttonBgColor rounded-tl-[12px] rounded-br-[12px]'>
-                    <span className='text-white px-[4px] py-[6px] text-[16px]'>{item.tag}</span>
+                {item.tag ? (<div className={`each-card-tag absolute top-0 left-0 ${item.tag === "Best Seller" ? "bg-buttonBgColor" : item.tag === "Must Try" ? "bg-tagSecondaryColor" : "bg-tagSecondaryColor3"} rounded-tl-[12px] rounded-br-[12px]`}>
+                    <span className='text-white px-[8px] py-[6px] text-[16px]'>{item.tag}</span>
                 </div>) : null}
+                {item.tag1 ? <div className='absolute right-0 top-0 bg-tagSecondaryColor2 rounded-tr-[12px] rounded-bl-[12px]'>
+                    <span className='text-white px-[8px] py-[6px] text-[16px]'>{item.tag1}</span>
+                </div> : null}
                 <div className='each-card-image'>
                     <img src={item.image} alt={item.header} width={item.imageWidth} height={item.imageHeight} />
                 </div>

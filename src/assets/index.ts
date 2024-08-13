@@ -53,3 +53,6 @@ export { default as HimalayaBabyLotion} from "./images/himalaya_lotion.png";
 export { default as JoyBodyLotion} from "./images/joy_skincare.png";
 export { default as BounvitaProductImage} from "./images/bournvita_product_image.png";
 export { default as NiharAmlaProductImage} from "./images/nihar_product_image.png";
+export { default as FaceCareHeroImage2} from "./images/face_care_img_hero_2.png";
+export { default as FaceCareHeroImage} from "./images/face_care_img_hero.png";
+export { default as PondsFaceWashImage} from "./images/Ponds_face_wash_image.png";

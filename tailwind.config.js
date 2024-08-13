@@ -20,6 +20,9 @@ module.exports = {
         testimonialsBgColor: "#fde9db",
         fontColorSubHeader: "#FC813B",
         breadCrumbsTextColor: "#1F2535",
+        tagSecondaryColor: "#09D009",
+        tagSecondaryColor2: "#D82726",
+        tagSecondaryColor3: "#FFCD29",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
@@ -28,6 +31,8 @@ module.exports = {
       },
       backgroundImage: {
         "hero-image": "url('/src/assets/images/hero_image_bg.png')",
+        "face-care-hero-image":
+          "url('/src/assets/images/face_care_hero_bg.png')",
       },
       boxShadow: {
         "card-shadow": "0px 4px 7px 0px #0000000A",

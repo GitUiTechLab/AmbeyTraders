@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.face-care-content-container {
+  @apply flex flex-col justify-center items-center m-10;
+}
+
+.face-care-content-container .header {
+  @apply text-[40px] text-breadCrumbsTextColor font-bold text-center;
+}
+
+.face-care-content-container .products-container-grid {
+  @apply grid grid-cols-3 gap-4 p-4;
+}

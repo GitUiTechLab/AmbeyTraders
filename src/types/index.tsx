@@ -31,12 +31,13 @@ type ProductCardProps = {
     rating: string;
     price: string;
     mainCategory: string;
-    category: string;
-    subCategory: string;
+    category?: string;
+    subCategory?: string;
     imageWidth: number;
     imageHeight: number;
     tag?: string;
-    discount?: number
+    discount?: number,
+    tag1?: string
 }
 
 export type ProductCardContainerPeops = {
